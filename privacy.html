@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy policy &mdash; Floor General</title>
-<meta name="description" content="Privacy policy for the Floor General mobile game. The app collects nothing and sends nothing off the device.">
+<meta name="description" content="Privacy policy for the Floor General mobile game: anonymous usage statistics only, no accounts, no ads, no tracking.">
 <style>
   :root {
     color-scheme: dark;
@@ -70,159 +70,160 @@
   <header>
     <h1>Privacy policy</h1>
   </header>
-  <p class="meta">Floor General: Basketball Sim for iPhone (Android to follow) &middot; Last updated 30 October 2026</p>
+  <p class="meta">Floor General: Basketball Sim for iPhone (Android to follow) &middot; Last updated 10 November 2026</p>
 
   <div class="lede">
-    <p><strong>Floor General does not collect any data about you.</strong> It has
-    no account system, no servers, and no code that sends anything anywhere.
-    Your career is saved as a small file on your own phone, and that is the
-    only place it exists.</p>
+    <p><strong>Floor General collects anonymous usage statistics and nothing
+    that identifies you.</strong> It has no accounts, no ads and no tracking.
+    It counts things like &ldquo;a game was played&rdquo; or &ldquo;a season
+    ended 22&ndash;8&rdquo;, so we can see which parts of the game work and
+    which do not. One switch in Settings turns that off. Your career itself
+    is saved on your own phone and the game plays fully offline.</p>
   </div>
 
   <h2>Who we are</h2>
 
-  <p>Floor General is made and published by Vibalyze O&Uuml;. Because the app
-  collects no personal data, we are not the controller of any personal data
-  through it. You can reach us at
-  <a href="mailto:vibalyze@zohomail.eu">vibalyze@zohomail.eu</a>.</p>
+  <p>Floor General is made and published by Vibalyze O&Uuml;, Tallinn,
+  Estonia, which is the controller of the data described here. You can reach
+  us at <a href="mailto:vibalyze@zohomail.eu">vibalyze@zohomail.eu</a>.</p>
 
   <h2>What we collect</h2>
 
-  <p>Nothing. The app contains no analytics service, no advertising libraries,
-  no crash reporting service, no in-app purchase libraries and no social or
-  sign-in integrations. It does not ask for your email address, your contacts,
-  your location, your photos, your microphone or your camera. It does not read
-  your advertising identifier or any other device identifier.</p>
+  <h3>Anonymous usage statistics</h3>
 
-  <p>The app has no networking code of its own. The only system features it
-  uses are the one that tells it where its own private storage folder is, so
-  it can write your save files there, and the system&rsquo;s own &ldquo;rate
-  this app&rdquo; prompt, described below.</p>
+  <p>While you play, the app records short events about the game and sends
+  them to our own server: for example that a career started (and with which
+  build), that a game was played (the level, whether it was won, the score
+  margin, your points, the game plan picked), which choice was taken on a
+  story card, how a season ended, which awards were won, and when the app
+  was opened and for how long. Each event carries only numbers, yes/no
+  values and the game&rsquo;s own fixed ids. <strong>It never contains the
+  name you typed for your player, any team or character name, or anything
+  else you wrote.</strong></p>
+
+  <p>With the events we send the app version, the operating system and its
+  version, the language of the app, your device&rsquo;s time-zone offset,
+  and a random install id. The install id is created by the app, is not
+  derived from your device or your Apple or Google account, is replaced
+  after 13 months, and is deleted with the app. The server sees your
+  connection&rsquo;s IP address only to answer the request and to derive the
+  country; it never stores or logs the address.</p>
+
+  <p>We use these statistics only to understand and improve the game (for
+  example retention, session length, and whether a decision is ever taken).
+  We do not sell them, share them, combine them with other data, or use them
+  for advertising, and they are not linked to you. Our legal basis is our
+  legitimate interest in improving the game (GDPR Art. 6(1)(f)); you can
+  object at any time with the switch below.</p>
+
+  <p><strong>Turning it off:</strong> on the start screen tap the gear, then
+  switch off <em>Share stats</em>. The app then deletes the events still
+  waiting on the phone and sends nothing more.</p>
+
+  <h3>Apple Search Ads attribution (iPhone)</h3>
+
+  <p>On the first launch the app asks iOS for an Apple attribution token
+  (Apple&rsquo;s AdServices framework) and sends it once, with the install
+  id, to our server, which asks Apple whether the install came from one of
+  our Apple Search Ads campaigns. This uses no advertising identifier, is
+  not tracking under Apple&rsquo;s rules, and needs no tracking prompt. It
+  is not sent when <em>Share stats</em> is off.</p>
+
+  <h3>&ldquo;Write to us&rdquo;</h3>
+
+  <p>If you send us a message from Settings &rsaquo; <em>Write to us</em>,
+  we receive the message, the kind you picked (bug, idea or other), the
+  email address if you chose to give one, and the same app details and
+  install id as above. We use it only to read and answer you. It works even
+  with <em>Share stats</em> off, because you chose to send it.</p>
+
+  <h3>What we never collect</h3>
+
+  <p>No advertising identifier (IDFA or Android advertising id), no device
+  serial or vendor id, no contacts, location, photos, microphone or camera,
+  no account, and no purchase data (there are no purchases). The app
+  contains no advertising, analytics or crash-reporting SDK from another
+  company.</p>
+
+  <h3>Where it is stored and for how long</h3>
+
+  <p>Our server runs on Cloudflare (a processor acting on our instructions),
+  with the database stored in the European Union. Raw events and the
+  attribution record are kept for 120 days; after that only daily totals
+  remain, which describe no single install (kept 25 months). Messages are
+  kept for up to 24 months.</p>
 
   <h2>What the app stores on your device</h2>
 
   <p>One file, <code>career.json</code>, inside the app&rsquo;s own documents
-  folder. It is unusually small, because of how the game is built: the game is
-  deterministic, so instead of saving the state of your career it saves the
-  instructions for rebuilding it, and replays them when you come back.</p>
+  folder: a seed (one number the game uses to decide what happens), the name
+  you typed for your player, the list of actions you took, and a small
+  fingerprint the game uses to check the file still matches its own rules.
+  The game is deterministic, so instead of saving the state of your career it
+  saves the instructions for rebuilding it. The name you type is treated as a
+  character name; it never leaves the device.</p>
 
-  <p>The whole file is:</p>
-
-  <ul>
-    <li>a seed &mdash; one number the game uses to decide what happens</li>
-    <li>the name you typed for your player</li>
-    <li>the list of actions you took, in order</li>
-    <li>a small fingerprint the game uses to check the file still matches its
-    own version of the writing and the rules</li>
-  </ul>
-
-  <p>That is all of it. There are no timestamps, no device information and no
-  identifiers. It is plain readable JSON and you can open it with any text
-  editor. None of it is transmitted.</p>
-
-  <p>The name you type is treated as a character name, not as your name. It is
-  never sent anywhere and never shown to anyone else, because there is nobody
-  else in the app.</p>
-
-  <p>A second file, <code>hall_of_fame.json</code>, keeps a one-line summary
-  of each career you finish &mdash; the seed, the player&rsquo;s name, which
-  ending it reached and whether that was a good one, and a legacy score
-  &mdash; so the game can show your past careers. It stays on the device like
-  the save.</p>
-
-  <p>A third file, <code>settings.json</code>, holds a single setting: whether
-  haptics are on or off.</p>
-
-  <p>A fourth, equally small file, <code>review.json</code>, records only when
-  the game last asked for the rating prompt and which moments have already
-  been seen, so that it does not ask too often. It holds nothing about
-  you.</p>
-
-  <p>The game&rsquo;s content &mdash; every event, every line of play-by-play
-  &mdash; ships inside the app as bundled files. Nothing is downloaded at
-  runtime, so there is no request to a content server and nothing to
-  log.</p>
+  <p>Small companions: <code>hall_of_fame.json</code> (a one-line summary of
+  each finished career), <code>settings.json</code> (haptics on or off),
+  <code>review.json</code> (when the rating prompt was last asked),
+  <code>onboarding.json</code> (that your first player was built), and the
+  statistics queue and install id in the app&rsquo;s support folder (events
+  waiting to be sent).</p>
 
   <h3>Device backups</h3>
 
   <p>Because the save lives in the app&rsquo;s documents folder, it is picked
-  up by your phone&rsquo;s normal backup: device or iCloud backup on iOS, and
-  Android Auto Backup once the Android version is out. That is deliberate, so
-  reinstalling the app does not delete a career in progress. Those backups are
-  handled by Apple and Google under their own privacy policies and your own
-  backup settings. We cannot see them, and we have no way to read your
-  save.</p>
+  up by your phone&rsquo;s normal backup (device or iCloud backup on iOS,
+  Android Auto Backup on Android), so reinstalling the app does not delete a
+  career in progress. Those backups are handled by Apple and Google under
+  their own privacy policies. We cannot see them.</p>
 
   <h2>The rating prompt</h2>
 
   <p>At a few high moments &mdash; a first pro contract, a first title, a
   first MVP &mdash; the game may ask the operating system to show its
-  standard &ldquo;rate this app&rdquo; sheet. The system limits how often it
-  appears, and the game never asks after a loss. That sheet is drawn and run
-  by Apple or Google, not by us. If you leave a rating or review, it goes to
-  the store under the store&rsquo;s own privacy policy, and we only ever see
-  what the store publishes.</p>
+  standard &ldquo;rate this app&rdquo; sheet. That sheet is drawn and run by
+  Apple or Google, not by us; a rating or review goes to the store under the
+  store&rsquo;s own privacy policy.</p>
 
-  <h2>Accounts, online play, leaderboards</h2>
+  <h2>Accounts, online play, advertising, purchases</h2>
 
-  <p>There are none. There is no login, no friends list, no chat, no cloud save
-  and no online leaderboard. The other characters in the game &mdash; your
-  teammates, opponents, coaches, agents and reporters &mdash; are invented by
-  the game. They are not other people and they are never presented as other
-  people. The entire game works with the phone in aeroplane mode.</p>
-
-  <p>If online features are ever added, this page will be updated before they
-  ship and the store listing&rsquo;s privacy answers will be redone to
-  match.</p>
-
-  <h2>Advertising and purchases</h2>
-
-  <p>The app contains no advertising and no in-app purchases. There is no ad
-  network in the build, so there is no ad profiling, no App Tracking
-  Transparency prompt and nothing to opt out of. Nothing in the game can be
-  bought, and no result can be paid for.</p>
+  <p>There are none. No login, no chat, no cloud save, no leaderboard, no ads
+  and nothing to buy. The other characters in the game are invented by the
+  game. The entire game works with the phone in aeroplane mode; statistics
+  simply wait until there is a connection, or are dropped after a week.</p>
 
   <h2>Deleting your data</h2>
 
-  <p>Uninstalling Floor General deletes the app&rsquo;s documents folder, and with
-  it the save, the legends list, the settings and the rating-prompt file.
-  There is nothing left on a server, because there is no server.</p>
-
-  <p>Two things to know:</p>
-
-  <ul>
-    <li>Your phone&rsquo;s backup may still hold a copy after you uninstall.
-    Clearing that is done in your device&rsquo;s backup settings, not in the
-    game.</li>
-    <li>Starting a new career replaces the existing one. There is one save, and
-    beginning again overwrites it.</li>
-  </ul>
+  <p>Uninstalling Floor General deletes everything on the phone, including
+  the install id. To have the statistics or messages already sent erased
+  from our server, write to
+  <a href="mailto:vibalyze@zohomail.eu">vibalyze@zohomail.eu</a>; we erase
+  everything held for your install. Because the data is not linked to you,
+  we may ask you to send a message from <em>Write to us</em> first, so we
+  can find your install id.</p>
 
   <h2>Children</h2>
 
-  <p>Floor General is intended for players aged 12 and over and is not directed
-  at young children, but little of that matters here: the app collects no
-  personal data from anyone, of any age. There are no ads, no purchases, no
-  chat, no user profiles and no way for one player to see another
-  player&rsquo;s content. Nothing a child types into the game leaves the
-  device.</p>
-
-  <p>We do not knowingly collect personal information from children, because
-  we do not collect personal information at all. If you believe something in
-  the app contradicts this, please write to the address below and we will fix
-  it.</p>
+  <p>Floor General is intended for players aged 12 and over and is not
+  directed at young children. The statistics are anonymous and the same for
+  every age, nothing a player types into the game leaves the device, and
+  there are no ads, purchases, chat or profiles. If you believe a child has
+  sent us a message with personal information, write to us and we will
+  delete it.</p>
 
   <h2>Your rights</h2>
 
-  <p>Data protection law, including the GDPR, gives you rights to access,
-  correct, export and delete personal data held about you. We hold none, so
-  there is nothing for us to hand over or erase. Your save file is yours, on
-  your device, and you can read it with any text editor.</p>
+  <p>Under the GDPR you have the right to access, correct, delete and export
+  personal data about you, to object to processing based on legitimate
+  interest, and to complain to a data-protection authority (in Estonia, the
+  Andmekaitse Inspektsioon, or the authority where you live). Write to
+  <a href="mailto:vibalyze@zohomail.eu">vibalyze@zohomail.eu</a>.</p>
 
   <h2>Changes to this policy</h2>
 
   <p>If the app starts doing something this page does not describe &mdash;
-  analytics, ads, purchases, cloud save &mdash; this page is updated first,
+  ads, purchases, cloud save &mdash; this page is updated first,
   with a new date at the top, and the store privacy forms are updated with it.
   We will not quietly add collection under an old policy.</p>
 
